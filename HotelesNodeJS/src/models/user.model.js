@@ -1,21 +1,17 @@
-"use strict";
-
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
+'use stict'
+const { ISO_8601 } = require('moment')
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
 
 const UserSchema = Schema({
-  username: {
-    type: String,
-    required: true,
-  },
-  email: String,
-  password: String,
-  rol: String,
-  mascotas: [{
-    nombre: String,
-    edad: Number,
-    comida: String
-  }]
-});
+    name: String,
+    lastName: String,
+    birthday: String,
+    country: String,
+    telefono: String,
+    lenguage: String,
+    email: String,
+    password: String
+})
 
-module.exports = mongoose.model("users", UserSchema);
+module.exports = mongoose.model("users",UserSchema)
