@@ -43,20 +43,20 @@ export const Navbar = () => {
                     >
                         Eventos
                     </NavLink>
-                    <NavLink 
-                        className={({isActive}) => `nav-item nav-link  ${ isActive ? 'active':''}`}
-                        to="/usuario"
-                    >
-                        Usuario
-                    </NavLink>
+                
                 </div>
             </div>
 
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
-                <ul className="navbar-nav ml-auto">
-                    <span className='nav-item nav-link text-primary'>
-                        Username
-                    </span>
+                <ul className="navbar-nav ml-auto">                    
+                    <NavLink 
+                        className={({isActive}) => `nav-item nav-link  ${ isActive ? 'active':''}`}
+                        to="/usuario"
+                    >
+                        <span className='nav-item nav-link text-primary'>
+                            Username
+                        </span>
+                    </NavLink>
 
                     <button className='nav-item nav-link btn'
                     onClick={ onLogout }

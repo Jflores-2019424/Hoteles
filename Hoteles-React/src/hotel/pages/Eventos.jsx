@@ -69,7 +69,8 @@ export const Eventos = () => {
         </div>
       </div>
       <hr />
-
+      <h1>Lista de Eventos</h1>
+      <hr /> 
       <EventList/>
     </>
     )

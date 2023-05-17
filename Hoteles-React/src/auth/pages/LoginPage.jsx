@@ -21,9 +21,9 @@ export const LoginPage = () => {
       <h1>Login</h1>
       <hr />
 
-      <input type="text" placeholder="Email" className="mb-1" />
+      <input type="text" placeholder="Email" className="mb-1 form-control" />
       <br />
-      <input type="text" placeholder="Password" className="mt-1" />
+      <input type="password" placeholder="Password" className="mt-1 form-control" />
       <hr />
 
       <button 
