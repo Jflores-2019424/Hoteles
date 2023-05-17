@@ -114,7 +114,7 @@ const editTypeEvent = async(req,res)=>{
                 $set:{
                     "eventeType.$.nameType": nameType,
                     "eventeType.$.descriptiontype": descriptionType
-                }
+                },
             },
             {new: true}
         )
