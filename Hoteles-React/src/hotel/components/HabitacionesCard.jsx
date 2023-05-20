@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 
+
 export const HabitacionesCard = () => {
     return(
         <div className="col animate__animated animate__fadeIn">
@@ -22,7 +23,7 @@ export const HabitacionesCard = () => {
                     <small className="text-muted"></small>
                 </p>
 
-                 <Link>
+                 <Link to={`/habitacionPage`}>
                   Mas...
                  </Link>
 

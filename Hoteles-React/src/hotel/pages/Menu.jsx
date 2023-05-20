@@ -1,4 +1,4 @@
-import { EventList } from "../components/EventList"
+import { EventList } from "../components/event/components/EventList"
 import { HabitacionesList } from "../components/HabitacionesList"
 
 export const Menu = () => {

@@ -1,6 +1,6 @@
-import { Routes, Route } from "react-router-dom"  
+import { Navigate, Routes, Route } from "react-router-dom"  
 import { LoginPage, Register } from "../auth/"
-import { HotelRoutes } from "../hotel"
+import { HotelRoutes, Menu } from "../hotel"
 
 export const AppRouter = () => {
   return (

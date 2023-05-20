@@ -1,4 +1,3 @@
 
-
-export * from './LoginPage';
-export * from './Register'
+export * from './login/components/LoginPage';
+export * from './register/components/Register'

@@ -1,7 +1,7 @@
 import queryString from "query-string";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "../../ui/hooks/useForm";
-import { EventList } from '../components/EventList'
+import { EventList } from '../components/event/components/EventList'
 
 export const Eventos = () => {
 
