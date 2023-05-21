@@ -16,7 +16,6 @@ const ReservationSchema = Schema({
         type: Schema.Types.ObectId,
         }
     ],
-    price: Number,
     Hotel:{
         type: Schema.Types.ObectId,
         ref: 'Hotel'

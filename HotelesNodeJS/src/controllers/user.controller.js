@@ -36,8 +36,10 @@ const listUser = async   (req,res)=>{
             res.status(400).send({
                 message: 'no contamos con usarios en este momento :('
             })
+        }else{
+            res.status(200).send({users: users})
         }
-        res.status(200).send({users: users})
+       
     }catch(er){
         throw new Error(er)
     } 
