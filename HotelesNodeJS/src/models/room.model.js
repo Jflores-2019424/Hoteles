@@ -8,6 +8,10 @@ const roomSchema = Schema({
         type: String,
         required: true,
     },
+    roomNumber: {
+        type: String,
+        required: true
+    },
     availability: {
         type: String,
         required: true
@@ -20,9 +24,10 @@ const roomSchema = Schema({
         type: String,
         required: true
     },
-    hotel: [{
-        
-    }]
+    description: {
+        type: String,
+        required: true
+    }
 })
 
 module.exports = mongoose.model("rooms", roomSchema );

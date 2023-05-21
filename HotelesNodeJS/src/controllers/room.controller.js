@@ -75,9 +75,23 @@ const deleteRooms = async(req, res) =>{
     }
 };
 
+const searchRoomById = async(req,res)=>{
+    const id = req.params.id
+    try{
+        const roomsSearch = await Room.findById(id)
+        if(!roomsSearch){
+            return res.status(404).send({message:'no se encontro el cuarto'});
+        }
+        return res.status(200).json(roomsSearch)
+    }catch(e){
+        throw new Error(e)
+    }
+}
+
 module.exports = {
     createRoom,
     readRooms,
     updateRooms,
-    deleteRooms
+    deleteRooms,
+    searchRoomById
 }
