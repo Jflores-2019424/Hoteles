@@ -1,4 +1,4 @@
-import { HabitacionesList } from '../components/HabitacionesList'
+import { HabitacionesList } from '../components/habitacion/components/HabitacionesList'
 
 
 export const Habitaciones = () => {

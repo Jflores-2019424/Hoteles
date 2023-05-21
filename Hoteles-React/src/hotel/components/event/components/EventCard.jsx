@@ -15,20 +15,24 @@ export const EventCard = () => {
   }, [])
 
   return (
-    <div className="col animate_animated animate_fadeIn">
+    <div className=" col animate__animated animate__fadeIn">
       {events.map((eventActual) => (
         <div className="card mt-3" key={eventActual._id}>
-          <div className="row no-gutters">
-            <div className="col-8">
-              <div className="card-body">
+          <div className="row no-gutters ">
+            <div className="col-8 ">
+              <div className="ps-3 card-body  text-center ">
                 <h5 className="card-title">{eventActual.name}</h5>
                 <p className="card-text">Fecha de reservación: {eventActual.date}</p>
+                <p className="card-text">invitados: {eventActual.guests} </p>
+                <p>tipo de evento: {eventActual.nameType} </p>
+                <p>descripcion:    </p>
+                <p >{eventActual.descriptionType}</p>
                 <Link to={`/event/${eventActual._id}`}>Más...</Link>
               </div>
             </div>
           </div>
         </div>
       ))}
-    </div>
-  )
+    </div>
+  )
 }

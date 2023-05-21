@@ -24,6 +24,12 @@ export const Eventos = () => {
     navigate(`?q=${ searchText.toLowerCase().trim() }`)
   }
 
+  const onEventAdd = () =>{
+    navigate('/eventadd', {
+      replace: true
+    })
+  }
+
 
     return (
       <>
@@ -44,9 +50,14 @@ export const Eventos = () => {
               onChange={ onInputChange }
               />
 
-              <button className="btn btn-outline-primary mt-1">
+              <button className="btn btn-outline-primary mt-1 ms-4 mt-2">
                 Buscar
               </button>
+
+                <button className="btn btn-outline-success mt-1 ms-5"
+                  onClick={onEventAdd}
+                >Agregar</button>
+
             </form>
         </div>
 

@@ -1,8 +1,8 @@
 import { Navbar } from '../../ui';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { Habitaciones, Menu, Eventos, Usuario, EventPage } from '../pages';
+import { Habitaciones, Menu, Eventos, Usuario } from '../pages';
 import { isUserAuthenticated } from '../../auth/pages/login/helpers/LoginHelper';
-import { HabitacionPage } from '../pages/HabitacionPage';
+import { HabitacionPage } from '../components/habitacion/components/HabitacionsPage';
 
 export const HotelRoutes = () => {
   return (
@@ -16,7 +16,6 @@ export const HotelRoutes = () => {
                 <Route path="habitaciones" element={<Habitaciones/>}/>
                 <Route path='eventos' element={<Eventos/>}/>
 
-                <Route path="event/:id" element={<EventPage/>}/>
                 <Route path="habitacionPage" element={<HabitacionPage/>}/>
 
                 <Route path="usuario" element={<Usuario/>}/>

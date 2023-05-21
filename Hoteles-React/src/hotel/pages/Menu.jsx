@@ -1,5 +1,5 @@
 import { EventList } from "../components/event/components/EventList"
-import { HabitacionesList } from "../components/HabitacionesList"
+import { HabitacionesList } from "../components/habitacion/components/HabitacionesList"
 
 export const Menu = () => {
   return (
