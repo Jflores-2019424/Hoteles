@@ -67,7 +67,7 @@ const deleteRooms = async(req, res) =>{
         const id = req.params.id;
         const roomDelete = await Room.findByIdAndDelete(id);
         return res.status(200).send({
-            message:"Cuarto eliminado correctamente",
+            message:"Usuario eliminado correctamente",
             roomDelete
         });
     }catch(err){
